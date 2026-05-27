@@ -197,13 +197,19 @@ http://localhost:5173
 # 📌 Screenshots
 
 ## Dashboard
+<img width="898" height="596" alt="image" src="https://github.com/user-attachments/assets/93ee3ae0-0e59-4ccc-900a-5783ae8f13d5" />
 
 
 ## Matching Slots
+<img width="918" height="528" alt="image" src="https://github.com/user-attachments/assets/ea5e900b-0aee-4ab3-ae3c-ee76aac2e0ae" />
 
 
 ## Interview Scheduler
+<img width="921" height="605" alt="image" src="https://github.com/user-attachments/assets/1e7ebe2a-685f-46eb-9e88-203e816c8188" />
 
+
+## Upcoming Interviews
+<img width="902" height="431" alt="image" src="https://github.com/user-attachments/assets/44022fea-e51e-4ca5-86e6-5ca09caed773" />
 
 ---
 
