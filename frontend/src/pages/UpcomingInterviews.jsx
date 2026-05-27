@@ -38,7 +38,7 @@ function UpcomingInterviews() {
   const updateStatus = async (id, status) => {
     try {
       await axios.put(
-        `http://localhost:5000/api/interviews/${id}/status`,
+        `https://hiresync-0lnu.onrender.com/api/interviews/${id}/status`,
         {
           status,
         }

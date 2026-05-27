@@ -8,7 +8,7 @@ function MatchingSlots() {
   useEffect(() => {
     const getMatches = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/matches");
+        const response = await axios.get("https://hiresync-0lnu.onrender.com/api/matches");
 
         setMatches(response.data);
 

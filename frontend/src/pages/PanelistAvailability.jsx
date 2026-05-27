@@ -29,7 +29,7 @@ function PanelistAvailability() {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/panelists/availability",
+        "https://hiresync-0lnu.onrender.com/api/panelists/availability",
         formData
       );
 

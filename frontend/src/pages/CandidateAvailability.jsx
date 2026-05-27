@@ -28,7 +28,7 @@ function CandidateAvailability() {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/candidates/availability",
+        "https://hiresync-0lnu.onrender.com/api/candidates/availability",
         formData
       );
 

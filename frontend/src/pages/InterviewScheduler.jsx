@@ -35,7 +35,7 @@ function InterviewScheduler() {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/interviews",
+        "https://hiresync-0lnu.onrender.com/api/interviews",
         formData
       );
 
