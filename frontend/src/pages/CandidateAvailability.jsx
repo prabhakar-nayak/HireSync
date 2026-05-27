@@ -1,5 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
+import BASE_URL from "../services/api.js";
 
 function CandidateAvailability() {
   const [formData, setFormData] = useState({
@@ -28,7 +29,7 @@ function CandidateAvailability() {
 
     try {
       const response = await axios.post(
-        "https://hiresync-0lnu.onrender.com/api/candidates/availability",
+        `${BASE_URL}/api/candidates/availability`,
         formData
       );
 

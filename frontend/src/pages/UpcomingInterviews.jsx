@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
+import BASE_URL from "../services/api.js";
+
 
 function UpcomingInterviews() {
   const [interviews, setInterviews] = useState([]);
@@ -11,7 +13,7 @@ function UpcomingInterviews() {
   const fetchInterviews = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:5000/api/interviews/upcoming"
+        `${BASE_URL}/api/interviews/upcoming`
       );
 
       setInterviews(response.data);
@@ -38,7 +40,7 @@ function UpcomingInterviews() {
   const updateStatus = async (id, status) => {
     try {
       await axios.put(
-        `https://hiresync-0lnu.onrender.com/api/interviews/${id}/status`,
+        `${BASE_URL}/api/interviews/${id}/status`,
         {
           status,
         }

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
+import BASE_URL from "../services/api.js";
 
 function MatchingSlots() {
   const [matches, setMatches] = useState([]);
@@ -8,7 +9,7 @@ function MatchingSlots() {
   useEffect(() => {
     const getMatches = async () => {
       try {
-        const response = await axios.get("https://hiresync-0lnu.onrender.com/api/matches");
+        const response = await axios.get(`${BASE_URL}/api/matches`);
 
         setMatches(response.data);
 

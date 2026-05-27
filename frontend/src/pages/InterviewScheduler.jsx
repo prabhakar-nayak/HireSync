@@ -1,5 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
+import BASE_URL from "../services/api.js";
 
 function InterviewScheduler() {
   const [formData, setFormData] = useState({
@@ -35,7 +36,7 @@ function InterviewScheduler() {
 
     try {
       const response = await axios.post(
-        "https://hiresync-0lnu.onrender.com/api/interviews",
+        `${BASE_URL}/api/interviews`,
         formData
       );
 
